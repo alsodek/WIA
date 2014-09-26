@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Site</title>	
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/chart.css" />
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="includes/chart_ie.css" />
+		<![endif]-->
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/chart.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <a href="index.html"><img src="images/luxury_logo.png"></a>
+        
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chart.html">Inventory</a></li>
+                <li><a href="locate.html">Find Us</a></li>
+            </nav>  
+            
+           
+		<div class="chart-container">
+			<div class="chart-title">
+				<h2>Number of Plants in Stock</h2>
+				<p>Includes Everything We Carry</p>
+			</div>
+			<div class="chart-content">
+				<div class="chart-y-axis">
+					<p style="top:0px;">10000</p>
+					<p style="bottom:225px;">7500</p>
+					<p style="bottom:150px;">5000</p>
+					<p style="bottom:75px;">2500</p>
+					<p style="bottom:0px;">0</p>
+				</div>
+				<div class="chart-area" bar-spacing="30">
+					<div bar-value="5280" label="May"   class="chart-bar sporting"></div>
+					<div bar-value="3900" label="June" class="chart-bar hoursewares"></div>
+					<div bar-value="4257" label="July"   class="chart-bar shipping"></div>
+					<div bar-value="5850" label="August"   class="chart-bar clothing"></div>
+					<div bar-value="7345" label="September"    class="chart-bar jewelry"></div>
+				</div>
+				<div class="chart-x-axis"></div>
+			</div>
+		</div>
+            
+        </div>
+    </body>
+</html>

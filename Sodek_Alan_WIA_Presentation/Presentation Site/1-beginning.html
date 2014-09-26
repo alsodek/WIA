@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Avgrund Demonstration</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/styles/sunburst.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+                <section>
+                    <h1>Avgrund.js</h1>  
+                    <h3>Alan Sodek</h3>
+                </section>
+                
+                <section>
+                    <h1>What is avgrund?</h1>
+                    <h4 class="fragment grow">Avgrund is a stylized modal used to add interest to your site.</h4>
+                </section>
+                
+                <section>
+                    <h1>Why avgrund?</h1>
+                    <ul>
+                        <li class="fragment roll-in">Brings interest to pop-ups.</li>
+                        <li class="fragment roll-in">Customizable.</li>
+                        <li class="fragment roll-in">Simple to use.</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    
+                    <section>
+                        <h1>Create Functions</h1>
+                        <pre><code>
+&lt;script&gt;
+function openDialog() { 
+Avgrund.show( &quot;#default-popup&quot; ); 
+} 
+function closeDialog() { 
+Avgrund.hide(); 
+}
+&lt;/script&gt;                     
+                        </code></pre>
+                    </section>
+        		
+                    <section>
+                        <h1>Establish Modal</h1>
+                        <pre><code>                     
+&lt;aside id=&quot;default-popup&quot; class=&quot;avgrund-popup&quot;&gt;
+&lt;h2&gt;That's all, folks&lt;/h2&gt; 
+&lt;p&gt; You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition. &lt;/p&gt; 
+&lt;p&gt;As you can see, this is a very clean looking way to bring up your modal.&lt;/p&gt; 
+&lt;button onclick="javascript:closeDialog();"&gt;Close&lt;/button&gt; 
+&lt;/aside&gt; 
+&lt;article class=&quot;avgrund-contents&quot;&gt; 
+&lt;h1&gt;Avgrund.js Example!&lt;/h1&gt; 
+&lt;p&gt; A modal concept which aims to give a sense of depth between the page and modal layers. Click the button below to give it a try. &lt;/p&gt; 
+&lt;button onclick="javascript:openDialog();"&gt;Open Avgrund&lt;/button&gt; 
+&lt;p&gt; Uses CSS transforms to scale components and CSS filters to blur the page. &lt;/p&gt;                        
+                        </code></pre>
+                    </section>
+    		
+                </section>    
+                
+                <section>
+                    <h1>Where can I get avgrund?</h1>
+                    <a href="http://github.com/hakimel/avgrund" target="_blank"> Go to Github </a>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Site</title>	
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/interactive_map.css" />
+        <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript" src="js/interactive_map.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <a href="index.html"><img src="images/luxury_logo.png"></a>
+        
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chart.html">Inventory</a></li>
+                <li><a href="locate.html">Find Us</a></li>
+            </nav>
+            
+            <div class="map_container">
+
+			<!-- Dots -->
+			<a class="dot" style="top:99px;  left:113px;" continent="NA" city="dallas"></a>
+			<a class="dot" style="top:83px;  left:87px;"  continent="NA" city="seattle"></a>
+			<a class="dot" style="top:173px; left:387px;" continent="AU" city="perth" ></a>
+			<a class="dot" style="top:71px;  left:236px;" continent="EU" city="london"></a>
+			<a class="dot" style="top:93px;  left:141px;" continent="NA" city="newyorkcity"></a>			
+			<a class="dot" style="top:94px;  left:412px;" continent="AS" city="tokyo"></a>
+			<a class="dot" style="top:89px;  left:386px;" continent="AS" city="tianjin"></a>		
+			<a class="dot" style="top:84px;  left:257px;" continent="EU" city="rome"></a>
+			<a class="dot" style="top:76px; left:273px;" continent="EU" city="warszawa"></a>
+
+			
+			<!-- Form -->
+			<form id="mapForm" name="mapForm" class="form_continent" method="post" action="">
+				<select name="continent" id="continent">
+					<option value="AS">Asia</option>
+					<option value="AU">Australia</option>
+					<option value="EU">Europe</option>
+					<option value="NA">North America</option>
+					<option value="ALL" selected="selected">Show all continents</option>
+				</select>
+			</form>
+
+			<!-- City details -->
+			<div class="detail_container">
+				<!-- City -->
+				<div class="city_detail">
+					<h3>Choose a city</h3>
+					
+				</div>
+			</div>
+			
+		</div>
+		<p>Welome to Luxury Gardens. Please use the map to the right to locate a store near you.</p>
+		<p>Over the last 50 years we have been fortunate enough to open stores in almost every corner of the world. Using the map to the right is easy. Just select which continent you'd like to visit and it will show you where the nearest Luxury Gardens store is located. While there, feel free to browse as long as you want or ask one of our knowledgable associates for advice. Look forward to seeing you soon. Happy Planting!</p>
+		
+		
+		
+		<div class="city_detail_container">
+			
+			<!-- City -->
+			<div class="city_detail" id="london">
+				<img class="city_photo" src="images/cities/london.jpg" alt="sydney" width="75" height="75" />
+				<div class="city_info">
+					<h2>London</h2>
+					<h3>Europe</h3>
+					<p>The First European store to open for us has been around for over 20 years. </p>
+				</div>
+			</div>
+			
+			
+			
+			<!-- City -->
+			<div class="city_detail" id="tokyo">
+				<img class="city_photo" src="images/cities/tokyo.jpg" alt="brazil" width="75" height="75" />
+				<div class="city_info">
+					<h2>Tokyo</h2>
+					<h3>Asia</h3>
+					<p>Tokyo has some of the most beautiful plants of the world.</p>
+				</div>
+			</div>
+			
+			
+			
+			<!-- City -->
+			<div class="city_detail" id="dallas">
+				<img class="city_photo" src="images/cities/dallas.jpg" alt="dallas" width="75" height="75" />
+				<div class="city_info">
+					<h2>Dallas</h2>
+					<h3>North America</h3>
+					<p>This is where Luxery Plants calls home. This flagship location has been around for almost 50 years. Come enjoy the beautiful plants that Texas has to offer.</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+			
+			
+			<!-- City -->
+			<div class="city_detail" id="seattle">
+				<img class="city_photo" src="images/cities/seattle.jpg" alt="seattle" width="75" height="75" />
+				<div class="city_info">
+					<h2>Seattle</h2>
+					<h3>North America</h3>
+					<p>The rainfall makes for a unique climate, producing a wonderfull atmosphere to garden. </p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+			
+			
+			<!-- City -->
+			<div class="city_detail" id="perth">
+				<img class="city_photo" src="images/cities/perth.jpg" alt="perth" width="75" height="75" />
+				<div class="city_info">
+					<h2>Perth</h2>
+					<h3>Australia</h3>
+					<p>Come Visit our exotic location on the coast of Australia. New and exciting plants are waiting to be discovered.</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>		
+            
+			
+			<!-- City -->
+			<div class="city_detail" id="newyorkcity">
+				<img class="city_photo" src="images/cities/newyorkcity.jpg" alt="newyorkcity" width="75" height="75" />
+				<div class="city_info">
+					<h2>New York City</h2>
+					<h3>North America</h3>
+					<p>The city that never sleeps needs some outdoors as well. Come enjoy one of the largest selections of plants we have to offer.</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+            
+			
+			<!-- City -->
+			<div class="city_detail" id="tianjin">
+				<img class="city_photo" src="images/cities/tianjin.jpg" alt="tianjin" width="75" height="75" />
+				<div class="city_info">
+					<h2>Tianjin</h2>
+					<h3>Asia</h3>
+					<p>Wonderfull plants that you need to see to believe!</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+
+            
+			
+			<!-- City -->
+			<div class="city_detail" id="rome">
+				<img class="city_photo" src="images/cities/rome.jpg" alt="rome" width="75" height="75" />
+				<div class="city_info">
+					<h2>Rome</h2>
+					<h3>Europe</h3>
+					<p>Rome has some of the most fascinating plants dating back thousands of years.</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+			
+			
+			<!-- City -->
+			<div class="city_detail" id="warszawa">
+				<img class="city_photo" src="images/cities/warszawa.jpg" alt="warszawa" width="75" height="75" />
+				<div class="city_info">
+					<h2>Warszawa</h2>
+					<h3>Europe</h3>
+					<p>Our largest store in Europe boasts one of the largest variteis in the world as well.</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+			
+		</div>    
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+/* CSS */
+
+html {
+    background-color: #176337;
+}
+
+#wrapper {
+    width: 920px;
+    margin: 0 auto;
+    border: solid 5px #282828;
+    border-radius: 10px;
+    padding: 15px;
+    background-image: url('../images/GC_background.jpg');
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    margin: 0 auto;
+    width: 770px;
+    border: solid 5px #282828;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#info {
+    margin-top: 75px;
+}
+
+.chart-container {
+    margin: 0 auto;
+    width: 770px;
+    border: solid 5px #282828;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/************************************ NAV ****************************************/
+
+nav{
+    clear: both;
+}
+
+/* hide overflow */
+nav ul{
+	margin: 0% auto;
+	list-style-type: none;
+	padding: 0%;
+	overflow: hidden;
+}
+
+/* set width/background color */
+nav li{
+	background: #282828;
+	width: 33%; 
+	float: left;
+	list-style-type: none;
+}
+
+
+nav a{
+    /* remove bullets */
+	text-decoration: none;
+	display: block;
+    /* set height */
+	height: 56px;
+	line-height: 56px;
+    /* center text */
+	text-align: center;
+    /* add color */
+	color: #fff;
+}
+
+/* hover mechanic */
+nav a:hover{
+	color: #176337;
+	background: #282828;
+    /* shifts text up on hover */
+    
+}
+
+nav a:active{
+	color: #fff;
+	background: #176337;
+}
